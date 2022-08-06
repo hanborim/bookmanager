@@ -46,3 +46,20 @@ hashCode : 두 객체가 같은 객체인지, 동일성(identity) 를 비교하�
 :빌더패턴을 손쉽게 적용
 User user2 = User.builder().name("bba").email("dsd@sdd").build();
 
+
+
+H2 IN-Memory DB에대하여
+‘-gradle:runtimeOnly 'com.h2database:h2'
+‘-프로젝트 resource /file생성 : application.yml로생성
+spring:
+  h2:
+    console:
+      enabled: true
+
+로그:부트 시작후 로그 확인
+2022-08-06 23:01:55.925  INFO 8546 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b8bced6f-d791-4490-ae9a-f6544293b551'
+
+주소:
+http://localhost:8080/h2-console/
+주소치면 디비 로그인주소가 나올것임 , url에 저 주소 복사  (jdbc:h2:mem:b8bced6f-d791-4490-ae9a-f6544293b551)
+
