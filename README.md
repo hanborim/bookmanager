@@ -63,3 +63,7 @@ spring:
 http://localhost:8080/h2-console/
 주소치면 디비 로그인주소가 나올것임 , url에 저 주소 복사  (jdbc:h2:mem:b8bced6f-d791-4490-ae9a-f6544293b551)
 
+
+
+'-22.08.09'
+JpaRepository 상속하여 save,findall()메소드 확인
