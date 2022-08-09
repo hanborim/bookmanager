@@ -16,7 +16,7 @@ class UserTest {
         user.setCreatedate(LocalDateTime.now());
         user.setUpdatedate(LocalDateTime.now());
 
-        User user1 = new User("bbo","bbo@poscoict", LocalDateTime.now(),LocalDateTime.now());
+        User user1 = new User(null,"bbo","bbo@poscoict", LocalDateTime.now(),LocalDateTime.now());
 
         System.out.println(">>>>" + user.toString());
     }
